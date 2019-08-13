@@ -1,0 +1,88 @@
+/**index.wxss**/
+/* 轮播 */
+.container{padding:0;margin: 0;}
+.page-section{
+  width: 100%;
+ position: relative;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-image{width: 100%;}
+.header-swiper{height: 500rpx;}
+/*用来包裹所有的小圆点 */
+.dots {
+ height: 5rpx;
+ display: flex;
+ flex-direction: row;
+ position: absolute;
+ left: 320rpx;
+ bottom:90rpx;
+}
+/*未选中时的小圆点样式 */
+.dot {
+ width: 42rpx;
+ height: 5rpx;
+ background: rgba(255, 255, 255, .3);
+}
+.dot:nth-child(n+1){
+  margin-left:10rpx;
+}
+/*选中以后的小圆点样式 */
+.active {
+ width: 42rpx;
+ height: 5rpx;
+ background-color: rgba(249, 145, 80, 1);
+}
+.header{width: 100%;}
+.header-search{
+  position: absolute;top: 60rpx;display: flex;flex-direction: row;
+width: 100%;height:66rpx; }
+.search-c{width: 60%;background: rgba(255, 255, 255,0.5);border-radius: 20px;position: relative;height: 100%;margin-left: 10%;}
+.search-input{width: 70%;color: #666666;display: inline-block;line-height: 66rpx;font-size: 28rpx;margin-left: 5%;}
+.search-icon{margin-left: 5%;height: auto;vertical-align: middle;}
+
+.search-message{width: 8%;height: 100%;}
+.demo-badge{width:100%;
+height:100%;
+background:#eee;
+border-radius:6px;
+display:inline-block;
+}
+.i-badge{width: 100%;height: 100%;position:relative;
+display:inline-block;
+line-height:1;
+vertical-align:middle;
+}
+.demo-badge-img{width: 100%;height: 100%;}
+/* 分类 */
+.fenlei{margin-top: -100rpx;}
+.fenlei-c{border-radius: 10px;height: 200rpx;}
+.fenlei-c-img{width:70%;height: 100rpx;}
+.fenlei-c-list{width: 25%;text-align: center;}
+.fenlei-c-list-text{width: 100%;text-align: center;}
+.padding-xl {padding:30rpx;}
+/* 品牌特卖 */
+.pptm-title{height: 80rpx;}
+.bg01{width: 25px;height: 25rpx;}
+.bg01-img{width: 100%;height: 100%;}
+.pptm-title-text{font-size: 40rpx;font-family: 微软雅黑;font-weight: bold;margin-left: 10rpx;margin-right: 10rpx;}
+.pptm-container{padding:30rpx;}
+.pptm-list{background-color: #fff;width: 100%;border-radius: 10px;overflow: hidden;}
+.pptm-list-top{width: 100%;height: 300rpx;}
+.pptm-list-top-img{width: 100%;height: 100%;}
+.pptm-list-center{padding: 20rpx;}
+.pptmlist-c-title{font-size: 32rpx;color: black;line-height: 45rpx;}
+.pptmlist-c-title02{font-size: 24rpx;color: #999999;}
+.pptm-xj{font-size: 32rpx;color: black;font-weight: bold;}
+.pptm-hyj{background-color:#ff6b39;color: white;padding: 5rpx 15rpx; }
+.pptm-share{width: 30rpx;height: 30rpx;}
+.pptm-share-img{width: 100%;height: 100%;}
+.pptm-hyj{border-radius: 10px;}
+.pptm-list:nth-child(n+2){margin-top: 30rpx;}
+
+
+
+

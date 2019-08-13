@@ -1,0 +1,3 @@
+/* pages/shop/shop.wxss */
+/* 头部 */
+.header-car{width:100%;height: 70rpx;}

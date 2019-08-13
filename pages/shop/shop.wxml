@@ -1,0 +1,22 @@
+<!--pages/shop/shop.wxml-->
+
+<view class="header">
+  <view class="header-fixed bg-gradual-orange">
+    <cu-custom  isBack="{{true}}">
+      <view slot="backText">返回</view>
+      <view slot="content">购物车</view>
+    </cu-custom>
+
+    <view class="flex solid-bottom padding justify-between">
+      <view class="padding-sm margin-xs">
+        <image class="header-car" src="/img/car.png"></image>
+        <view class="">购物车</view>
+      </view>
+      <view class="padding-sm margin-xs">20件</view>
+    </view>
+    
+  </view>
+</view>
+
+
+

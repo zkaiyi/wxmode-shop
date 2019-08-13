@@ -1,0 +1,15 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+.clearfix:after{display: block;content: "";clear: both}
+.fl{float: left;}
+.fr{float: right;}
+.hide{display: none;}
+.flex-box {display:-webkit-box;display:-moz-box;display:-moz-flex;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+
+.just-center {justify-content:center;-webkit-justify-content:center;}
+
+.align-center {align-items:center;-webkit-align-items:center}
+
+
+.nodata-content{margin-top: 30%;width: 100%;text-align: center;color: #9b9b9b;font-size: 32rpx;}
+.nodata{width:146rpx;height: 150rpx;margin: 0 auto;display: block;margin-bottom: 35rpx;}

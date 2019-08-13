@@ -1,0 +1,153 @@
+<view class="container">
+
+  <view class="header">
+    <!-- 轮播 -->
+    <view class="page-section page-section-spacing swiper">
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"  bindchange="swiperChange"
+        interval="{{interval}}" duration="{{duration}}" class="header-swiper"  >
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" height="200"/>
+          </swiper-item>
+        </block>
+      </swiper>
+      <!-- 重置小圆点的样式 -->
+      <view class="dots"> 
+        <block wx:for="{{imgUrls}}"> 
+        <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view> 
+        </block> 
+      </view> 
+    </view>
+    
+    <!-- 搜索 -->
+    <view class="header-search">
+      <view class="search-c">
+        <icon type="search" size="16" class="search-icon" /> 
+			  <view class="search-input">美白防晒露</view>
+      </view>
+    </view>
+
+  </view>
+
+  
+  
+ <!-- 分类 -->
+ <view class="padding text-center fenlei">
+  <view class="padding-xl radius shadow-warp bg-white fenlei-c">
+     <view class="fenlei-c-list fl">
+      <image class="fenlei-c-img" src="/img/fl_01.png"></image>
+      <view class="fenlei-c-list-text">女装</view>
+     </view>
+     <view class="fenlei-c-list fl">
+       <image class="fenlei-c-img" src="/img/fl_02.png"></image>
+       <view class="fenlei-c-list-text">男装</view>
+     </view>
+     <view class="fenlei-c-list fl">
+      <image class="fenlei-c-img" src="/img/fl_03.png"></image>
+      <view class="fenlei-c-list-text">童装</view>
+     </view>
+     <view class="fenlei-c-list fl">
+      <image class="fenlei-c-img" src="/img/fl_04.png"></image>
+      <view class="fenlei-c-list-text">更多</view>
+     </view>
+     
+    
+     
+     
+  </view>
+ </view>
+
+
+
+ <!-- 品牌特卖 -->
+ <view class="pptm">
+    <view class="pptm-title flex-box align-center just-center">
+      <view class="bg01"><image class="bg01-img" src="/img/bg01.png"></image></view>
+      <view class="pptm-title-text">品牌特惠</view>
+      <view class="bg01"><image class="bg01-img" src="/img/bg03.png"></image></view>
+    </view>
+
+    <view class="pptm-container">
+        <view class="pptm-list">
+          <view class="pptm-list-top">
+            <image class="pptm-list-top-img" src="/img/shop01.png"></image>
+          </view>
+
+          <view class="pptm-list-center">
+            <view class="pptmlist-c-title">【现货】家用粉萌小烤箱|小熊电器</view>
+            <view class="pptmlist-c-title02 flex-box justify-between">
+              <view class="pptmlist-c-title02-f">foodography麦当劳 / 迪士尼 / 天猫 / 轩尼诗 /</view>
+              <view class="pptmlist-c-title02-r">销量：5682</view>
+            </view>
+          </view>
+
+
+          <view class="flex solid-bottom justify-between pptm-list-bot">
+            <view class=" flex justify-start">
+                <view class="margin-xs pptm-xj ">￥109.00</view>
+                <view class="margin-xs ">
+                  <view class="pptm-hyj">会员价￥99.00</view>
+                </view>
+            </view>
+            <view class="padding-sm margin-xs">
+              <view class="pptm-share">
+                <image class="pptm-share-img" src="/img/shar.png"></image>
+              </view>
+            </view>
+          </view>
+          
+        </view>
+
+        <view class="pptm-list">
+          <view class="pptm-list-top">
+            <image class="pptm-list-top-img" src="/img/shop02.png"></image>
+          </view>
+
+          <view class="pptm-list-center">
+            <view class="pptmlist-c-title">【现货】便携保温水杯|膳魔师保温杯</view>
+            <view class="pptmlist-c-title02 flex-box justify-between">
+              <view class="pptmlist-c-title02-f">防伪码验真+支持刻字</view>
+              <view class="pptmlist-c-title02-r">销量：1121</view>
+            </view>
+          </view>
+
+
+          <view class="flex solid-bottom justify-between pptm-list-bot">
+            <view class=" flex justify-start">
+                <view class="margin-xs pptm-xj ">￥225.00</view>
+                <view class="margin-xs ">
+                  <view class="pptm-hyj">会员价￥168.00</view>
+                </view>
+            </view>
+            <view class="padding-sm margin-xs">
+              <view class="pptm-share">
+                <image class="pptm-share-img" src="/img/shar.png"></image>
+              </view>
+            </view>
+          </view>
+          
+        </view>
+
+
+        <view style="height: 60rpx;line-height:60rpx;width: 100%;text-align: center;font-size: 24rpx;color: #838383;" wx:if="{{!hasdata && products.length!==0}}">----下面没有了----</view>
+
+
+    </view>
+
+ 
+ </view>
+
+
+
+
+
+  <!-- 脚 -->
+
+
+
+
+
+
+  
+</view>

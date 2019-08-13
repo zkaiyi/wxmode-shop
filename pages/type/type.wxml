@@ -1,0 +1,85 @@
+<!--pages/type/type.wxml-->
+
+ 
+
+
+<!-- 搜索 -->
+<view class="search-section bg-gradual-orange">
+
+ <view class="header-c bg-gradual-orange">
+ <cu-custom  isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">分类</view>
+  </cu-custom>
+
+
+	<view  class="header ">
+		<view  class="search">
+			<icon type="search" size="16" catchtap="toSearchList"/> 
+			<input type="text" confirm-type="search" placeholder="新品上架" bindconfirm="toSearchList" bindinput='searchInput'/>
+		</view>
+	</view>
+  
+  </view>
+	<view class="zhanwei"></view>
+</view>
+
+
+<!-- 左侧 -->
+<view class="navs">
+	<view class="nav box-sizing {{index==navIndex ? 'nav-active':'' }}" bindtap="tabNav" wx:for="{{navs}}" wx:key="{{nav.id}}" wx:for-index="index" wx:for-item="nav" data-productid="{{nav.id}}" data-index="{{index}}">{{nav.name}}</view>
+</view>
+
+
+<!-- 右侧分类详情 -->
+
+<view class="content flex-box">
+	<view class="content-left">
+		
+	</view>
+	<view class="content-right">
+		<view  wx:if="{{product.length==0}}" class="nodata-content">
+			<image class="nodata" src="../../img/nodata.png" ></image>
+			<view>暂时没有信息哦</view>
+		</view>
+
+  
+
+    <view class="type-list" wx:for="{{product}}" wx:key="{{item.id}}"  wx:for-index="index" data-productid="{{item.id}}" bindtap="toDetail">
+
+        <view   class="flex section" wx:if="{{index % 2 == 0}}">
+          <view class="flex-sub padding-sm margin-xs radius">
+            <view class="section-top-name">{{item.name}}</view>
+            <view class="section-top-name02">{{item.e_name}}</view>
+          </view>
+          <view class="flex-sub  radius">
+            <image class="section-top-img" src="{{item.images}}"></image>
+          </view>
+        </view>
+
+        <view wx:if="{{index % 2 !== 0}}"  class="flex section">
+          <view class="flex-sub">
+            <image class="section-top-img" src="{{item.images}}"></image>
+          </view>
+          <view class="flex-sub padding-sm margin-xs">
+            <view class="section-top-name">{{item.name}}</view>
+            <view class="section-top-name02">{{item.e_name}}</view>
+          </view>
+        </view>
+    
+    </view>
+    
+
+   
+
+
+
+
+
+
+		<view style="height: 60rpx;line-height:60rpx;width: 100%;text-align: center;font-size: 24rpx;color: #838383;" wx:if="{{!hasData && product.length>0}}">----下面没有了----</view>
+	</view>
+</view>
+
+ 
+
