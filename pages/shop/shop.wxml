@@ -7,16 +7,101 @@
       <view slot="content">购物车</view>
     </cu-custom>
 
-    <view class="flex solid-bottom padding justify-between">
-      <view class="padding-sm margin-xs">
+    <view class="flex padding justify-between header-car-cc">
+      <view class="padding-sm margin-xs header-car-c align-center">
         <image class="header-car" src="/img/car.png"></image>
-        <view class="">购物车</view>
+        <view class="header-car-text">购物车</view>
       </view>
-      <view class="padding-sm margin-xs">20件</view>
+      <view class="padding-sm margin-xs header-car-text2">20件</view>
     </view>
     
   </view>
 </view>
+
+
+<view class="padding text-center car-item" >
+  <!-- 空空 -->
+  <view class="padding-xl car-item-nodata radius shadow bg-white">
+    <image class="car-item-nodata-img" src="/img/shop-nodata.jpg"></image>
+    <button class="car-item-nodata-but cu-btn round shadow bg-orange">去逛逛</button>
+  </view>
+<!-- 一组 -->
+  <view style="display:none;" class="padding-xl radius shadow bg-white justify-start flex car-item01">
+    <view class="padding-sm car-item01-01"><checkbox class="round orange" checked></checkbox></view>
+    <view class="padding-sm solid"><image class="car-item-img" src="/img/car-shop01.jpg"></image></view>
+    <view class="padding-sm margin-xs car-item01-03">
+      <view class="car-item01-03-title">智造减压眼部按摩仪</view>
+      <view class="car-item01-03-title02">999+好评爆款</view>
+      <view class="car-item01-03-title03">￥888.88</view>
+    </view>
+    <view class="padding-sm car-item01-04"><text class="cuIcon-delete lg text-black car-item01-04-icon"></text></view>
+    <view class="car-item01-05">
+      <i-panel>
+         <i-input-number value="{{value1}}" min="0" max="100" bindchange="handleChange1" />
+      </i-panel>
+    </view>
+  </view>
+  <!-- 一组 -->
+
+  <view style="display:none;" class="padding-xl radius shadow bg-white justify-start flex car-item01">
+    <view class="padding-sm car-item01-01"><checkbox class="round orange"></checkbox></view>
+    <view class="padding-sm solid"><image class="car-item-img" src="/img/car-shop01.jpg"></image></view>
+    <view class="padding-sm margin-xs car-item01-03">
+      <view class="car-item01-03-title">智造减压眼部按摩仪</view>
+      <view class="car-item01-03-title02">999+好评爆款</view>
+      <view class="car-item01-03-title03">￥888.88</view>
+    </view>
+    <view class="padding-sm car-item01-04"><text class="cuIcon-delete lg text-black car-item01-04-icon"></text></view>
+    <view class="car-item01-05">
+      <i-panel>
+         <i-input-number value="{{value1}}" min="0" max="100" bindchange="handleChange1" />
+      </i-panel>
+    </view>
+  </view>
+  <view style="display:none;" class="padding-xl radius shadow bg-white justify-start flex car-item01">
+    <view class="padding-sm car-item01-01"><checkbox class="round orange"></checkbox></view>
+    <view class="padding-sm solid"><image class="car-item-img" src="/img/car-shop01.jpg"></image></view>
+    <view class="padding-sm margin-xs car-item01-03">
+      <view class="car-item01-03-title">智造减压眼部按摩仪</view>
+      <view class="car-item01-03-title02">999+好评爆款</view>
+      <view class="car-item01-03-title03">￥888.88</view>
+    </view>
+    <view class="padding-sm car-item01-04"><text class="cuIcon-delete lg text-black car-item01-04-icon"></text></view>
+    <view class="car-item01-05">
+      <i-panel>
+         <i-input-number value="{{value1}}" min="0" max="100" bindchange="handleChange1" />
+      </i-panel>
+    </view>
+  </view>
+  <view style="display:none;" class="padding-xl radius shadow bg-white justify-start flex car-item01">
+    <view class="padding-sm car-item01-01"><checkbox class="round orange"></checkbox></view>
+    <view class="padding-sm solid"><image class="car-item-img" src="/img/car-shop01.jpg"></image></view>
+    <view class="padding-sm margin-xs car-item01-03">
+      <view class="car-item01-03-title">智造减压眼部按摩仪</view>
+      <view class="car-item01-03-title02">999+好评爆款</view>
+      <view class="car-item01-03-title03">￥888.88</view>
+    </view>
+    <view class="padding-sm car-item01-04"><text class="cuIcon-delete lg text-black car-item01-04-icon"></text></view>
+    <view class="car-item01-05">
+      <i-panel>
+         <i-input-number value="{{value1}}" min="0" max="100" bindchange="handleChange1" />
+      </i-panel>
+    </view>
+  </view>
+
+</view>
+
+
+<!-- 结算 -->
+  <view class="cu-bar bg-orange tabbar border shop fixed car-js">
+    <view class="btn-group">
+      合计：254.00
+    </view>
+  
+    <view class="btn-group">
+      <button class="cu-btn bg-white round shadow-blur car-js-bth">结算（3）</button>
+    </view>
+  </view>
 
 
 
